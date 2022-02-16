@@ -14,18 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-    Route::post("/logout", [AuthController::class, "logout"]);
+Route::group(["middleware" => ["auth:sanctum"]], function(){
     Route::post("/products", [ProductController::class, "create"]);
     Route::put("/products/{id}", [ProductController::class, "update"]);
     Route::delete("/products/{id}", [ProductController::class, "destroy"]);
-});
+    Route::post("/logout", [AuthController::class, "logout"]);
+}); 
 
-
-Route::post("/register", [AuthController::class, "register"]);
-Route::post("/login", [AuthController::class, "login"]);
 Route::get("/products", [ProductController::class, "index"]);
 Route::get("/products/{id}", [ProductController::class, "show"]);
+Route::post("/register", [AuthController::class, "register"]);
+Route::post("/login", [AuthController::class, "login"]);
+
 Route::get("/products/search/{name}", [ProductController::class, "search"]);
-Route::get("/products/filter/{component}", [ProductController::class, "filter"]);
+Route::get("/products/searchWithFilter/{component}", [ProductController::class, "searhWithfilter"]);
