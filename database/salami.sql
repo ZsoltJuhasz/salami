@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Feb 16. 19:48
+-- Létrehozás ideje: 2022. Feb 16. 19:57
 -- Kiszolgáló verziója: 10.4.8-MariaDB
 -- PHP verzió: 7.3.10
 
@@ -43,7 +43,7 @@ CREATE TABLE `components` (
 
 INSERT INTO `components` (`id`, `meat_raw_material`, `created_at`, `updated_at`) VALUES
 (1, 'szárnyas', '2022-02-16 16:15:26', '2022-02-16 16:15:26'),
-(2, 'sertés', '2022-02-16 16:15:16', '2022-02-16 15:29:16'),
+(2, 'sertés', '2022-02-16 16:15:16', '2022-02-16 16:17:16'),
 (3, 'marha', '2022-02-16 16:23:43', '2022-02-15 16:24:43');
 
 -- --------------------------------------------------------
