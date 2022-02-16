@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Feb 16. 19:57
+-- Létrehozás ideje: 2022. Feb 16. 20:10
 -- Kiszolgáló verziója: 10.4.8-MariaDB
 -- PHP verzió: 7.3.10
 
@@ -162,7 +162,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Juhasz', 'jzsolt1@lan.com', NULL, '$2y$10$TqyK9/7BXoNeHw2c60zTl.zocoNBjPTn859Sin9I9ylLGnXCGctFRS', NULL, '2022-02-16 16:31:48', '2022-02-09 16:31:48');
+(1, 'Juhasz', 'jzsolt1@lan.com', NULL, '$2y$10$TqyK9/7BXoNeHw2c60zTl.zocoNBjPTn859Sin9I9ylLGnXCGctFRS', NULL, '2022-02-16 16:31:48', '2022-02-16 16:31:48');
 
 --
 -- Indexek a kiírt táblákhoz
